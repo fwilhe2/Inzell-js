@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v2
+     - name: Install Inzell Devel version
+       run: |
+           cd ..
+           git clone -b master https://github.com/fwilhe2/Inzell
+           cd Inzell
+           ./gradlew build
+     - name: Install
+       run: |
+         npm install
+
+     - run: node index.js
