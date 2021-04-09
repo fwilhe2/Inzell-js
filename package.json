@@ -1,0 +1,14 @@
+{
+  "name": "inzell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inzell-jsLegacy": "file:../Inzell/build/js/packages/inzell-jsLegacy"
+  }
+}
